@@ -113,18 +113,19 @@ main {
 footer {
     background-color: var(--discord-dark);
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 #links {
-    display: flex;
-    justify-content: space-around;
     width: 80%;
+    display: flex;
+    justify-content: space-evenly;
     margin: auto;
+    border-bottom: 1px solid white;
 }
 
 .menu-title {
-    height: 100px;
-    width: 150px;
     color: var(--discord-title);
     font-size: 1.5rem;
 }
