@@ -8,18 +8,22 @@ body {
     --discord-primary: rgba(49, 97, 224, 1);
     --discord-dark: rgba(35, 39, 42, 1);
     --discord-title: rgba(142, 161, 225, 1);
-    --discord-background:  rgba(246, 246, 246, 1);
+    --discord-background: rgba(246, 246, 246, 1);
 }
 
 button {
     height: 40px;
     padding: 0.75rem;
     border-radius: 1.5rem;
+    font-size: 0.75rem;
+    font-weight: 800;
 }
+
 ul {
     display: flex;
     list-style: none;
 }
+
 /* #endregion common */
 
 /* #region header */
@@ -30,12 +34,18 @@ ul {
     background-color: var(--discord-primary);
     align-items: center;
 }
-nav>ul{
+
+nav>ul {
     flex-direction: row;
 }
+
 li {
     padding: 1.5rem;
     color: white;
+}
+
+#access {
+    background-color: var(--discord-background);
 }
 
 /* #endregion header */
@@ -48,18 +58,29 @@ main {
 }
 
 .jumbotron {
+    color: white;
     display: flex;
     justify-content: center;
-    padding: 100px;
+    height: 480px;
     background-image: url(../img/jumbo.png);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+#download {
+    background-color: var(--discord-background);
+}
+
+#open {
+    background-color: var(--discord-dark);
+    color: white;
 }
 
 #header-block {
     width: 500px;
     text-align: center;
     justify-content: center;
+    align-self: center;
 }
 
 #space {
@@ -71,7 +92,7 @@ main {
 #easy {
     display: flex;
     justify-content: center;
-    background-color: var(--discord-background);
+    background-image: url(../img/wave.svg);
 }
 
 #fandom {
@@ -93,20 +114,26 @@ main {
 }
 
 .main-text {
-      align-self: center;
+    align-self: center;
 }
 
 #function-showcase {
-    background-color: var(--discord-background);
     display: flex;
     justify-content: center;
 }
-#function-block{
+
+#function-block {
     width: 80%;
     text-align: center;
     align-items: center;
     margin: 50px;
 }
+
+#download2 {
+    background-color: var(--discord-title);
+    color: white;
+}
+
 /* #endregion main */
 
 /* #region footer */
@@ -129,7 +156,8 @@ footer {
     color: var(--discord-title);
     font-size: 1.5rem;
 }
-ul{
+
+ul {
     flex-direction: column;
     align-self: flex-start;
 }
@@ -140,4 +168,10 @@ ul{
     align-items: center;
     margin: 2rem;
 }
+
+#sign-in {
+    background-color: var(--discord-title);
+    color: white;
+}
+
 /* #endregion footer */
