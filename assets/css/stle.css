@@ -92,7 +92,6 @@ main {
 #easy {
     display: flex;
     justify-content: center;
-    background-image: url(../img/wave.svg);
 }
 
 #fandom {
@@ -128,10 +127,21 @@ main {
     align-items: center;
     margin: 50px;
 }
-
+h3{
+    background-image: url(../img/stars.svg);
+}
 #download2 {
     background-color: var(--discord-title);
     color: white;
+}
+.wave{
+    background-image: url(../img/wave.svg);
+    height: 100px;
+}
+.wave2{
+    background-image: url(../img/wave.svg);
+    height: 100px;
+    transform: rotate(180deg);
 }
 
 /* #endregion main */
