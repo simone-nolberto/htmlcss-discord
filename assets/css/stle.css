@@ -6,7 +6,7 @@ body {
 
 :root {
     --discord-primary: rgba(49, 97, 224, 1);
-    --discord-secondary: rgba(35, 39, 42, 1);
+    --discord-dark: rgba(35, 39, 42, 1);
     --discord-title: rgba(142, 161, 225, 1);
 }
 
@@ -16,7 +16,10 @@ button {
     padding: 0.75rem;
     border-radius: 1.5rem;
 }
-
+ul {
+    display: flex;
+    list-style: none;
+}
 /* #endregion common */
 
 /* #region header */
@@ -27,11 +30,9 @@ button {
     background-color: var(--discord-primary);
     align-items: center;
 }
-
-ul {
-    display: flex;
+nav>ul{
+    flex-direction: row;
 }
-
 li {
     padding: 1.5rem;
     color: white;
@@ -45,6 +46,7 @@ main {
     display: flex;
     flex-direction: column;
 }
+
 .jumbotron {
     display: flex;
     justify-content: center;
@@ -65,11 +67,13 @@ main {
     justify-content: center;
     margin: 30px;
 }
+
 #easy {
     display: flex;
     justify-content: center;
     margin: 30px;
 }
+
 #fandom {
     display: flex;
     justify-content: center;
@@ -82,12 +86,14 @@ main {
     height: 200px;
     display: flex;
 }
+
 #easy>.main-foto {
     background-color: lightskyblue;
     width: 500px;
     height: 200px;
     display: flex;
 }
+
 #fandom>.main-foto {
     background-color: lightskyblue;
     width: 500px;
@@ -114,30 +120,31 @@ main {
 
 /* #region footer */
 footer {
-    background-color: var(--discord-secondary);
-
+    background-color: var(--discord-dark);
     color: white;
 }
 
-#menu {
+#links {
     display: flex;
     justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+.menu-title {
+    height: 100px;
+    width: 150px;
+    color: var(--discord-title);
+    font-size: 1.5rem;
+}
+ul{
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 #subscript {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
-
-.menu-title {
-    height: 200px;
-    width: 150px;
-    background-color: lightcyan;
-    color: black;
-}
-
-ul {
-    list-style: none;
-}
-
 /* #endregion footer */
