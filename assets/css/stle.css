@@ -92,6 +92,7 @@ main {
 #easy {
     display: flex;
     justify-content: center;
+    background-color: var(--discord-background);
 }
 
 #fandom {
@@ -119,6 +120,7 @@ main {
 #function-showcase {
     display: flex;
     justify-content: center;
+    background-color: var(--discord-background);
 }
 
 #function-block {
