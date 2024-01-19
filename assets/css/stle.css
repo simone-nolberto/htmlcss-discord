@@ -31,15 +31,20 @@ button {
 ul {
     display: flex;
 }
-li{
+
+li {
     padding: 1.5rem;
     color: white;
 }
 
-
 /* #endregion header */
 
 /* #region main */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
 .jumbotron {
     display: flex;
     justify-content: center;
@@ -55,21 +60,39 @@ li{
     justify-content: center;
 }
 
-main {
+#space {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
 }
-
-.main-section {
+#easy {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+#fandom {
     display: flex;
     justify-content: center;
     margin: 30px;
 }
 
-.main-foto {
+#space>.main-foto {
     background-color: lightskyblue;
     width: 500px;
     height: 200px;
+    display: flex;
+}
+#easy>.main-foto {
+    background-color: lightskyblue;
+    width: 500px;
+    height: 200px;
+    display: flex;
+}
+#fandom>.main-foto {
+    background-color: lightskyblue;
+    width: 500px;
+    height: 200px;
+    display: flex;
 }
 
 .main-text {
