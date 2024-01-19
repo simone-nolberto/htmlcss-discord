@@ -8,6 +8,7 @@ body {
     --discord-primary: rgba(49, 97, 224, 1);
     --discord-dark: rgba(35, 39, 42, 1);
     --discord-title: rgba(142, 161, 225, 1);
+    --discord-background:  rgba(246, 246, 246, 1);
 }
 
 button {
@@ -70,7 +71,7 @@ main {
 #easy {
     display: flex;
     justify-content: center;
-    margin: 30px;
+    background-color: var(--discord-background);
 }
 
 #fandom {
@@ -96,13 +97,16 @@ main {
 }
 
 #function-showcase {
+    background-color: var(--discord-background);
+    display: flex;
+    justify-content: center;
+}
+#function-block{
     width: 80%;
     text-align: center;
-    justify-content: center;
-    align-self: center;
-    margin: 40px;
+    align-items: center;
+    margin: 50px;
 }
-
 /* #endregion main */
 
 /* #region footer */
